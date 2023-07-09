@@ -1,0 +1,22 @@
+.card {
+  cursor: pointer;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: var(--color-font-secondary);
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+
+  border-radius: 100%;
+}

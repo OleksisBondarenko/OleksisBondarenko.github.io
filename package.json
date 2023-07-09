@@ -1,0 +1,67 @@
+{
+    "name": "oleksiicherevan-github-io",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://OleksisBondarenko.github.io",
+    "author": "Oleksus",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build -m  \"Updated build\"",
+        "lint": "eslint ./src/**",
+        "prettier": "prettier ./src --write"
+    },
+    "dependencies": {
+        "@react-hook/mouse-position": "^4.1.3",
+        "@react-spring/web": "^9.5.5",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^13.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "mobx": "^6.6.2",
+        "mobx-react-lite": "^3.4.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "6",
+        "use-resizing": "^2.1.7",
+        "web-vitals": "^2.1.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.13.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "@vitejs/plugin-react": "^3.1.0",
+        "eslint": "^8.37.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "gh-pages": "^4.0.0",
+        "prettier": "^2.8.7",
+        "typescript": "^4.9.3",
+        "vite": "^4.2.0"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

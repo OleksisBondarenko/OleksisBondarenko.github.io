@@ -1,0 +1,48 @@
+.nav a {
+  font-family: "Raleway", sans-serif;
+  padding: 10px 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  display: inline-block;
+  padding-bottom: 4px;
+  display: flex;
+  gap: 5px;
+}
+
+.nav li {
+  position: relative;
+  list-style: none;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.nav li::before {
+  position: absolute;
+  content: " ";
+
+  transform: scale(0);
+
+  height: 3px;
+  bottom: 0;
+  left: 4%;
+
+  width: 90%;
+}
+
+.nav li:hover:before {
+  background: #fff;
+  height: 2.8px;
+
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav a {
+    font-size: 0.85rem;
+  }
+}

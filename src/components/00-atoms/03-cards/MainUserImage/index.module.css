@@ -1,0 +1,17 @@
+.user-image {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    max-height: 350px;
+    max-width: 350px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.user-image img {
+    height: auto;
+    width: 100%;
+    border-radius: 100%;
+}

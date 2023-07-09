@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --unit: max(10px, min(calc((100vw - var(--scrollbar-width)) * 0.00781 + 10px), 25px));
+  --scrollbar-width: 17px;
+
+  --color-primary: #3618cbc2;
+  --color-secondary: #3f22d3ab;
+
+  --color-font-primary: #000;
+  --color-font-secondary: #fff;
+  --color-font-additional: #9c9c9c;
+  --color-font-placeholder: #757575;
+
+  --color-background-body: #02021e;
+  --color-background-body-secondary: #f5f5f5;
+  --color-background-additional: #1b1b1b;
+  --color-background-field: #f8f8f8;
+
+  --color-border-field: #d8d8d8;
+
+  --break-mobile: 767px;
+  --break-tablet: 1023px;
+  --break-laptop: 1279px;
+  --break-desktop: 1439px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  margin: 0;
+}

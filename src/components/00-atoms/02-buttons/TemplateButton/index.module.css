@@ -1,0 +1,28 @@
+.button {
+  cursor: pointer;
+
+  height: 64px;
+  width: 100%;
+  /* max-width: 350px; */
+
+  border-radius: 4px;
+
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: var(--color-primary);
+  color: var(--color-font-secondary);
+}
+
+.button:hover {
+  opacity: .8;
+  transform: scale(1.1);
+}

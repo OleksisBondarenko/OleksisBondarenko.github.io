@@ -1,0 +1,4 @@
+.App {
+  text-align: center;
+  background: 50%/contain url("./assets/images/universe.webp") var(--color-background-body);
+}

@@ -1,0 +1,19 @@
+.button {
+  cursor: pointer;
+
+  height: 24px;
+  padding: 0px 10px;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 60px;
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-size: 12px;
+
+  letter-spacing: 0.01em;
+}

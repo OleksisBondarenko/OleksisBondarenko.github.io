@@ -1,0 +1,54 @@
+.border {
+  position: relative;
+
+  min-height: 212px;
+  max-width: 445px;
+
+  background: linear-gradient(90deg, #484848 0%, rgba(27, 27, 27, 0) 100%);
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+
+  text-align: start;
+
+  padding: 30px;
+  padding-right: 0px;
+
+  background-color: var(--color-background-body);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.quotes {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 117px;
+  letter-spacing: 0.01em;
+
+  color: var(--color-font-secondary);
+}
+
+@media screen and (max-width: 1023px) {
+  .border {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

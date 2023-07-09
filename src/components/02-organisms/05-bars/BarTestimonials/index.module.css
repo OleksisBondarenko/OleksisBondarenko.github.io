@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 60px 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cards {
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,13 @@
+.main {
+  /* background-color: var(--color-background-body); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

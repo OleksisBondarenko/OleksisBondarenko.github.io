@@ -1,0 +1,35 @@
+.card {
+  cursor: pointer;
+
+  height: 60px;
+  width: 160px;
+  border: var(--color-background-additional) 2px solid;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--color-background-body-secondary); */
+  
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.image {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex: 1;
+    min-width: 40%;
+  }
+}

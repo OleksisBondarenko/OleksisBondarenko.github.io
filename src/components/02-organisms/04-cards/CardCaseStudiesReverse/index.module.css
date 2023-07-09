@@ -1,0 +1,9 @@
+.card > div {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1023px) {
+  .card > div {
+    flex-direction: column-reverse;
+  }
+}

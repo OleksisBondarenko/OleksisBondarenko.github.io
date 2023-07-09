@@ -1,0 +1,45 @@
+.block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  background-color: var(--color-background-body);
+}
+
+.nav {
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.nav-button {
+  width: 100%;
+  height: 70px;
+  padding: 0 10px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-background-additional);
+
+  background-color: var(--color-background-body);
+  color: var(--color-font-additional);
+}
+
+.nav-button:hover {
+  background-color: var(--color-background-additional);
+}
+
+.button {
+  background-color: var(--color-background-body);
+  width: 70px;
+  height: 70px;
+}

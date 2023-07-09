@@ -1,0 +1,13 @@
+.hero {
+    height: 100vh;
+    background-color: #c0c0c0;
+}
+
+.form {
+}
+
+.form > input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

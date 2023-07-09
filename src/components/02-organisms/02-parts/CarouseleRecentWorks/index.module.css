@@ -1,0 +1,76 @@
+.button {
+  cursor: pointer;
+
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+  border: 1px solid var(--color-font-additional);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wrapper {
+  background-color: inherit;
+}
+
+.button-wrapper:first-child {
+  padding: 100px 65px 100px 20px;
+}
+
+.button-wrapper:last-child {
+  padding: 100px 20px 100px 65px;
+}
+
+.carousele {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousele-mobile {
+  display: none;
+}
+
+.buttons-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+  .block {
+    flex-direction: column;
+  }
+  .carousele {
+    display: none;
+  }
+
+  .carousele-mobile {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-wrapper:first-child {
+    padding: 100px 5% 100px 20px;
+  }
+
+  .button-wrapper:last-child {
+    padding: 100px 20px 100px 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-wrapper:first-child {
+    padding: 100px 3% 100px 3%;
+  }
+
+  .button-wrapper:last-child {
+    padding: 100px 3% 100px 3%;
+  }
+}

@@ -1,0 +1,83 @@
+.planets {
+    position: relative;
+    display: flex;
+    
+    height: 1px;
+    max-width: 1679px;
+    
+    margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.planet {
+    -webkit-animation: fadeInScale 0.5s 0.7s backwards;
+    animation: fadeInScale 0.5s 0.7s backwards;
+    display: block;
+    position: absolute;
+    transform: translate(var(--offset-x, 0), var(--offset-y, 0));
+    will-change: opacity, transform;
+}
+
+.first {
+    --left-units-count: 3.5;
+    --top-units-count: 6;
+    --width-units-count: 3;
+    --height-units-count: 3;
+    background: linear-gradient(156.8deg, white 15%, #79b0e8 75.42%);
+    border-radius: 50%;
+    height: calc(var(--height-units-count) * var(--unit));
+    left: calc(var(--left-units-count) * var(--unit));
+    top: calc(var(--top-units-count) * var(--unit));
+    width: calc(var(--width-units-count) * var(--unit));
+}
+
+.second {
+    --width-units-count: 2;
+    --height-units-count: 2;
+    --right-units-count: 3.5;
+    --top-units-count: 10;
+    background: linear-gradient(37.94deg, rgba(16, 8, 74, 0) 16.94%, #83a4ff 87.08%), #02021e;
+    border-radius: 50%;
+    height: calc(var(--height-units-count) * var(--unit));
+    right: calc(var(--right-units-count) * var(--unit));
+    top: calc(var(--top-units-count) * var(--unit));
+    width: calc(var(--width-units-count) * var(--unit));
+}
+
+.third {
+    --width-units-count: 1;
+    --height-units-count: 1;
+    --right-units-count: 10;
+    --top-units-count: 24;
+    background: #ddebfa;
+    border-radius: 50%;
+    height: calc(var(--height-units-count) * var(--unit));
+    right: calc(var(--right-units-count) * var(--unit));
+    top: calc(var(--top-units-count) * var(--unit));
+    width: calc(var(--width-units-count) * var(--unit));
+}
+
+@-webkit-keyframes fadeInScale {
+    0% {
+        opacity: 0.01;
+        transform: scale(0.9);
+    }
+    
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0.01;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
